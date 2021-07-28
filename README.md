@@ -27,11 +27,11 @@ catkin_make
 
 You can use and modify the provided `example.launch`. It will start a leddar_ros node to be visualized with RViz:
 
-The example below is for M16 using an USB connection. For other sensors, please refer to the example.launch file in the Leddar_ROS folder
+The example below is for Vu8 using an USB connection. For other sensors, please refer to the example.launch file in the Leddar_ROS folder
 
 ```bash
 cd ~/catkin_ws/
 source /opt/ros/melodic/setup.bash
 source ./devel/setup.bash
-roslaunch leddar_ros example.launch param1:=AK47035 device_type:=M16
+roslaunch leddar_ros example.launch param1:=/dev/ttyACM0 device_type:=Serial
 ```

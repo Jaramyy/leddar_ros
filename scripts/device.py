@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# test on Leddar Vu8 comunicate with ROS via USB Cable 
+# tested on Leddar Vu8 comunicate with ROS using USB Cable 
 
 import leddar
 import rospy
@@ -28,7 +28,7 @@ while not rospy.is_shutdown():
         frame_id = rospy.get_param('~frame_id', 'map')
         param1 = rospy.get_param('~param1','/dev/ttyACM0')     
         device_type = rospy.get_param('~device_type',"Serial") 
-        param3 = rospy.get_param('~param3', 1)
+        param3 = rospy.get_param('~param3', 0)
         param4 = rospy.get_param('~param4', 0)
     
         param1 = str(param1) # Be sure its a string (for CANbus)
